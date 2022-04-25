@@ -1,0 +1,448 @@
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../images/pexels-lukas-1419923.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    width: 100%;
+}
+/*#start1{
+    background-image: url(../images/pexels-lukas-1419923.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+#flex{
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    border: 1px solid black;
+    flex-wrap: nowrap;
+}
+.hide{
+    display: none;
+}
+.hide img{
+    transition: 2s;
+}
+#one{
+    width: 33.5%;
+    height: 100%;
+    background: url(../images/backulibrary.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#two{
+    width:33.5%;
+    height: 100%;
+    background: url(../images/backnews.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#three{
+    width: 33%;
+    height: 100%;
+    background: url(../images/novelback.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#one:hover{
+    width: 100%;
+    height: 100%;
+    background: url(../images/sigmund-EgwhIBec0Ck-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+#one:hover .hide{
+    display: inline-block;
+}
+
+#two:hover{
+    width: 100%;
+    height: 100%;
+    background: url(../images/pexels-brotin-biswas-518543.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+#two:hover .hide{
+    display: inline-block;
+}
+#three:hover{
+    width: 100%;
+    height: 100%;
+    background: url(../images/back1111.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+#three:hover .hide{
+    display: inline-block;
+}
+.one1 img{
+    padding-left: 10px;
+}
+img:hover {
+  transform: scale(1.1); 
+}
+button{
+    width: 20%;
+    height: 30px;
+    color: white;
+    font-size: 23px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+button:hover{
+     width: 23%;
+     height: 35px;
+     transition: 2s;
+     font-size: 26px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+#visit{
+    width: 10%;
+    height: 40px;
+    background-color: darkgray;
+    border-radius: 1px;
+    border: 1px solid ghostwhite;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+#visit:hover{
+     width: 13%;
+     height: 44px;
+     transition: 2s;
+     font-size: 26px;
+     opacity: 1;
+}
+#aside{
+    width: 100%;
+     /*background: rgb(218,247,234);
+background: linear-gradient(90deg, rgba(218,247,234,1) 0%, rgba(246,247,206,1) 100%);*/
+/*background-color: azure;*/
+}
+#loginup input{
+    width: 10%;
+    height: 40px;
+    background-color: darkgray;
+    border-radius: 1px;
+    border: 1px solid ghostwhite;
+    color: ghostwhite;
+    font-size: 23px;
+    float: right;
+    border-radius: 2px;
+    opacity: 0.9;
+}
+#loginup input:hover{
+    width: 13%;
+     height: 44px;
+     transition: 2s;
+     font-size: 26px;
+     opacity: 1;
+}
+#loginup{
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    right: 2%;
+    /*display: inline-block;*/
+}
+td input{
+    width: 200px;
+    height: 30px;
+}
+hr{
+    border: 1.5px solid black;
+}
+.livecomments{
+    display: inline-block;
+    position: fixed;
+    float: right;
+    right: 10px;
+    bottom: 40px;
+    font-size:1rem;
+    border: 1px solid black;
+    color: black;
+    border-radius: 2px;
+    background-color: white;
+    z-index: 5;
+}
+
+.boxlive{
+    height: 500px;
+    width: 300px;
+    display: none;
+    background-color: white;
+}
+#chatboxchats::-webkit-scrollbar{
+    display: none;
+}
+.boxlive.active{
+    display: block;
+}
+
+#chatboxchats{
+    height: 95%;
+    width: 100%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+   
+}
+#chatboxchats .chatother{
+    padding-left: 5px;
+    border-bottom: black 1px solid;
+}
+#chatboxchats .chatother::before{
+    content: "U Library ";
+    color: grey;
+    font-weight: bold;
+}
+#livecross{
+    position: absolute;
+    top: 0;
+    left: -25px;
+    color: black;
+    font-size: 27px;    
+
+}
+#livecross:hover{
+    color: red;
+}
+#livebtn{
+    animation-name: live;
+    font-size: 30px;
+    box-sizing: border-box;
+ 
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+#livebtn.active{
+    padding-left: 25%;
+}
+#chatarea{
+    width: 100%;
+    bottom: 0;
+    height: 5%;
+
+}
+#chatarea input{
+    width: 92%;
+    vertical-align: top;
+    height: 100%;
+}
+#chatarea a{
+    width: 8%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid black;
+    top: 10px;
+}
+@keyframes live{
+    0%{
+        color: white;
+    }
+    50%{
+        color: grey;
+    }
+    100%{
+        color: Black;
+    }
+}
+.check{
+    width: 100vw;
+    height: 20px;
+    background-color: yellow;
+}
+.live-flex{
+    /* display: flex; */
+    text-align: right;
+    width: 100%;
+    margin-top: 2px;
+    border-bottom: 1px solid black;
+
+}
+.live-flex::after{
+    color: gray;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    display: inline-block;
+    background-image: url(../static/espn.png);
+    
+}
+#User12 img{
+     border: 1px solid black;
+     border-radius: 50%;
+}
+#User12{
+    height: 0px;
+    width: 0px; 
+    position: fixed;
+    overflow: hidden;
+    left: -200%;
+}
+#User12:target{
+    height: 430px;
+    width: 350px;
+    position: absolute;
+    top:10% ;
+    left: 0;
+    border: 1px solid black;
+    background-color:papayawhip;
+    transition: 1.4s;
+}
+#User12 td{
+    font-size: 20px;
+}
+#User12 a{
+    color: red;
+}
+textarea {
+    resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@charset "UTF-8";
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+/*footer{
+    background-color: ghostwhite;
+}*/
+#Contact:hover{
+    color: lightseagreen;
+    transition:1s ;
+    font-size: 25px;
+    cursor: pointer;
+}
+#top{
+  font-size: 20px;
+  
+}
+#top a{
+  text-decoration: none;
+  color: black;
+}
+#top:hover{
+  text-decoration: underline;
+  font-size: 23px;
+}
+button{
+    max-width: 210px;
+}
+#visit{
+    max-width: 310px;
+}
